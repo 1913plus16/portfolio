@@ -5,7 +5,7 @@
     padding: 16px;
 }
 .parent{
-    background-color: antiquewhite;
+    background-color: aliceblue;
     padding: 16px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(320px,auto));
