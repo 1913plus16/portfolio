@@ -4,6 +4,9 @@
 .tab {
     padding: 16px;
 }
+.tab:hover {
+    background-color: rgba(128,128,128,0.1);;
+}
 .parent{
     background-color: aliceblue;
     padding: 16px;
@@ -11,10 +14,15 @@
     grid-template-columns: repeat(auto-fit,minmax(320px,auto));
     grid-gap: 1rem;
     align-items: center;
+    justify-content: center;
+}
+.parent img {
+    cursor: pointer;
 }
 .child{
     max-width: 320px;
 }
+.child-proj img {width: 320px; height: auto;}
 .child-1 video {max-width: 320px; height: auto;}
 .child-1 img {max-width: 320px;  height: auto;}
 .child-2 video {max-width: 320px; height: auto;}
@@ -30,4 +38,37 @@
 .child-10 img {max-width: 320px;  height: auto;}
 #main-body {
     display: flex;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 80vw;
+    max-height: auto;
+}
+
+#back-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+    background-color: rgba(128,128,128,0.5);
+    cursor: pointer;
 }
