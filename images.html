@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>I'm Ziheng</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <div>
-        <h1>Images</h1>
-    </div>
-    <div class="nav-bar">
-        <div class="tab">
-            <a href="index.html">Home</a>
+    <head>
+        <title>I'm Ziheng</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script defer type="text/javascript" src="script.js"></script>
+    </head>
+    <body onload="showCurrentTab('.images')">
+        <div>
+            <h1>I'm Ziheng!</h1>
         </div>
-        <div class="tab">
-            <a href="images.html">Images</a>
+        <div class="nav-bar">
+            <div class="tab home">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="tab images">
+                <a href="images.html">Images</a>
+            </div>
+            <div class="tab videos">
+                <a href="videos.html">Videos</a>
+            </div>
+            <div class="tab projects">
+                <a href="projects.html">Projects</a>
+            </div>
         </div>
-        <div class="tab">
-            <a href="videos.html">Videos</a>
-        </div>
-        <div class="tab">
-            <a href="projects.html">Projects</a>
-        </div>
-    </div>
     <div class="parent">
         <div class="child child-1">
             <img src="images/IMG_1.jpg">
@@ -54,6 +56,6 @@
             <img src="images/IMG_10.jpg">
         </div>
     </div>
-
+    <button id="back-top">Back to top</button>
 </body>
 </html>
