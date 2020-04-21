@@ -30,7 +30,8 @@
 .child-3 video {max-width: 320px; height: auto;}
 .child-3 img {max-width: 320px;  height: auto;}
 .child-4 img {max-width: 320px;  height: auto;}
-.child-5 img {grid-row: span 2; max-width: 320px;  height: auto;}
+.child-5 {grid-row: span 2;}
+.child-5 img {max-width: 320px;  height: auto;}
 .child-6 img {max-width: 320px;  height: auto;}
 .child-7 img {max-width: 320px;  height: auto;}
 .child-8 img {max-width: 320px;  height: auto;}
